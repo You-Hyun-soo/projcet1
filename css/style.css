@@ -1,0 +1,56 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px  #f0f0f0;
+}
+.head_menu{
+    width: 20%;
+    height: 80px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 80px;
+}
+.main_logo{
+    width: 60%;
+    height: 80px;
+    float: left;
+    text-align: center;
+    line-height: 90px;
+}
+.head_info{
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+.user_info{
+    width: 100px;
+    height: 30px;
+    border:1px solid #666666;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin:20px 10px;
+}
+.lang{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #666666;
+    border-radius:10px;
+    text-align: center;
+    float: left;
+    margin:20px 10px;
+}
+#main_menu{
+    width: 100%;
+    height: 60PX;
+}

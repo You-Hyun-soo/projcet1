@@ -6,14 +6,23 @@ a{
     text-decoration: none;
     color: #666666;
 }
+li{
+    list-style: none;
+}
+
+
 header{
     width: 100%;
     height: 80px;
     border-bottom: solid 1px  #f0f0f0;
 }
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
 .head_menu{
     width: 20%;
-    height: 80px;
     float: left;
     text-align: center;
     font-weight: bold;
@@ -22,35 +31,88 @@ header{
 }
 .main_logo{
     width: 60%;
-    height: 80px;
     float: left;
     text-align: center;
     line-height: 90px;
 }
 .head_info{
-    width: 20%;
-    height: 80px;
     float: left;
 }
-.user_info{
-    width: 100px;
+.user_info, .lang{
+    width: 120px;
     height: 30px;
     border:1px solid #666666;
     border-radius: 10px;
-    text-align: center;
+    line-height: 30px;
+    text-align: left;
     float: left;
     margin:20px 10px;
+    font-size: 13px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 .lang{
     width: 80px;
-    height: 30px;
-    border: 1px solid #666666;
-    border-radius:10px;
-    text-align: center;
-    float: left;
-    margin:20px 10px;
+}
+.selected1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/ico_arr_s_off2.png)
+}
+.lang a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/ico_arr_s_off2.png)
+}
+.more_info{
+    height: 100px;
+}
+.more_info .selected1::after{
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    transform: rotate(180deg);
+}
+.more_info a:hover{
+    background-color: lightgray;
+}
+.more_info a:nth-of-type(1):hover{
+    background-color: transparent;
 }
 #main_menu{
     width: 100%;
     height: 60PX;
+}
+#main_menu ul{
+    float: left;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+#main_menu a{
+    display: block;
+    font-family: 'Jua';
+    font-size: 1.2em;
+    line-height: 60px;
+    height: 60px;
+}
+#main_menu a:hover{
+    color: red;
+    border-bottom: 3px red solid;
 }
